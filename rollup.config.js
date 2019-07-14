@@ -2,7 +2,6 @@ import path from 'path';
 import minify from 'rollup-plugin-babel-minify';
 import cleaner from 'rollup-plugin-cleaner';
 import serve from 'rollup-plugin-serve';
-import liveReload from 'rollup-plugin-livereload';
 
 let constant = {
     dist:"dist",
@@ -26,7 +25,6 @@ const _plugins = () => {
             contentBase: [constant.dist,constant.public],
             port:constant.port
         }));
-        plugins.push(liveReload(constant.dist));
     }else{
         plugins.push(minify({
             comments:false,
