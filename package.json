@@ -1,0 +1,22 @@
+{
+  "name": "ds",
+  "version": "1.0.0",
+  "description": "Implementation of basic data structure in javascript.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "serve": "rollup -c --watch --environment ENV:dev"
+  },
+  "keywords": ["javascript","data structure","stack","queue","linked list"],
+  "author": "maninder singh",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar": "3.0.2",
+    "rollup": "1.16.7",
+    "rollup-plugin-babel-minify": "9.0.0",
+    "rollup-plugin-cleaner": "1.0.0",
+    "rollup-plugin-livereload": "1.0.1",
+    "rollup-plugin-serve": "1.0.1",
+    "rollup-watch": "4.3.1"
+  }
+}
