@@ -4,11 +4,25 @@ Implementation of basic data structure in javascript.
 
 ### Setup Guide
 ```
-$ 
+$ git clone git@github.com:maninder-singh/ds.git
+$ cd ds
+$ npm install
 ```
 ### Run Instruction 
 ```
+$ cd ds
+$ npm install
+$ npm run serve
 
+```
+
+### Build Instruction 
+```
+$ cd ds
+$ npm install
+$ npm run build
+
+// ds.min.js file is created in dist folder
 ```
 
 ### Data structure implementation 
