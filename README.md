@@ -108,4 +108,28 @@ $ npm run build
     console.log(`is queue empty => ${queue.isEmpty()}`);
     console.log(`peek of queue => ${queue.peek()}`);
   ```  
-  
+* Graph
+  * [Graph](src/graph/graph.js) - Basic implementation of graph.  
+```
+// Code example
+var Graph = DS.Graph;
+var graph = new Graph();
+graph.addNode('A');
+graph.addNode('B');
+graph.addNode('C');
+graph.addNode('D');
+graph.addNode('E');
+graph.addPath('A','B');
+graph.addPath('A','C');
+graph.addPath('A','D');
+graph.addPath('A','E');
+graph.addPath('B','D');
+graph.addPath('B','C');
+graph.addPath('C','E');
+graph.addPath('C','C');
+graph.addPath('C','B');
+graph.addPath('D','A');
+graph.addPath('D','B');
+graph.addPath('E','E');
+graph.print();
+```
