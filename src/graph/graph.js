@@ -16,9 +16,10 @@ Graph.prototype.addNode = function (node) {
 
 Graph.prototype.addPath = function (srcNode, destNode) {
   if(srcNode){
-      if(this._graph.hasOwnProperty(srcNode)){
-          this._graph[srcNode].push(destNode);
+      if(!this._graph.hasOwnProperty(srcNode)){
+          this.addNode(srcNode);
       }
+      this._graph[srcNode].push(destNode);
   }
 };
 
