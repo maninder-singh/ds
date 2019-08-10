@@ -58,20 +58,3 @@ Graph.prototype.dfs = function (node) {
 };
 
 export default Graph;
-
-var graph = new Graph();
-graph.addNode('1');
-graph.addNode('2');
-graph.addNode('3');
-graph.addNode('4');
-graph.addNode('5');
-graph.addNode('6');
-graph.addNode('7');
-graph.addPath('1','2');
-graph.addPath('1','3');
-graph.addPath('2','4');
-graph.addPath('2','5');
-graph.addPath('3','6');
-graph.addPath('3','7');
-graph.bfs('1');
-graph.dfs('1');
