@@ -1,9 +1,10 @@
+import bfs from './bfs';
+import dfs from './dfs';
 
 function Graph() {
     if (!(this instanceof Graph)) {
         return new Graph();
     }
-
     this._graph = {};
 }
 
@@ -49,4 +50,28 @@ Graph.prototype.print = function () {
   }.bind(this));
 };
 
+Graph.prototype.bfs = function (node) {
+    bfs(this._graph,node);
+};
+Graph.prototype.dfs = function (node) {
+    dfs(this._graph,node);
+};
+
 export default Graph;
+
+var graph = new Graph();
+graph.addNode('1');
+graph.addNode('2');
+graph.addNode('3');
+graph.addNode('4');
+graph.addNode('5');
+graph.addNode('6');
+graph.addNode('7');
+graph.addPath('1','2');
+graph.addPath('1','3');
+graph.addPath('2','4');
+graph.addPath('2','5');
+graph.addPath('3','6');
+graph.addPath('3','7');
+graph.bfs('1');
+graph.dfs('1');

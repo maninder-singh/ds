@@ -1,14 +1,14 @@
 # ds
 
-Implementation of basic data structure in javascript.
+An Implementation of basic data structure in javascript.
 
-### Setup Guide
+### setup guide
 ```
 $ git clone git@github.com:maninder-singh/ds.git
 $ cd ds
 $ npm install
 ```
-### Run Instruction 
+### run instruction 
 ```
 $ cd ds
 $ npm install
@@ -16,7 +16,7 @@ $ npm run serve
 
 ```
 
-### Build Instruction 
+### build instruction 
 ```
 $ cd ds
 $ npm install
@@ -25,118 +25,11 @@ $ npm run build
 // ds.min.js file is created in dist folder
 ```
 
-### Data structure implementation 
-* LinkedList
-  * [Linked List](src/linkedlist/ll.js) - Basic implementation of linked list.
-  ```
-    // Code example
-    var LinkedList = DS.LinkedList;
-    var ll = new LinkedList();
-    ll.add(1);
-    ll.add(2);
-    ll.add(4);
-    ll.add(3);
-    ll.add(5);
+### data structure implementation 
+* [Linked List](src/linkedlist/LINKEDLIST.md) - Basic implementation of linked list.
     
-    console.log(`element at index ${1} is ${ll.get(1)}`);
-    
-    console.log("before remove ");
-    ll.iterate(function (data) {
-        console.log(`${data} => `);
-    });
-    ll.remove(1);
-    console.log("after remove ");
-    ll.iterate(function (data) {
-        console.log(`${data} => `);
-    });
-    
-    ll.clear();
-    console.log("after clear");
-    ll.iterate(function (data) {
-        console.log(`${data} => `);
-    });
-  ```
-    
-* Stack
-  * [Stack](src/stack/stack.js) - Basic implementation of stack.
-  ```
-  // Code example
-  var Stack = DS.Stack;
-  var stack = new Stack();
-  stack.push(1);
-  stack.push(2);
-  console.log(`top of stack => ${stack.pop()}`);
-  stack.push(3);
-  stack.push(4);
-  console.log(`size of stack => ${stack.size()}`);
-  console.log(`peek of stack => ${stack.peek()}`);
-  console.log(`is stack empty => ${stack.isEmpty()}`);
-  stack.pop();
-  stack.pop();
-  stack.pop();
-  stack.pop();
-  stack.pop();
-  console.log(`top of stack => ${stack.pop()}`);
-  console.log(`size of stack => ${stack.size()}`);
-  console.log(`peek of stack => ${stack.peek()}`);
-  console.log(`is stack empty => ${stack.isEmpty()}`);
-  ```
-* Queue
-  * [Queue](src/queue/queue.js) - Basic implementation of queue.
-  ```
-    // Code example
-    var Queue = DS.Queue;
-    var queue = new Queue();
-    queue.enqueue(1);
-    queue.enqueue(2);
-    queue.enqueue(3);
-    queue.enqueue(4);
-    queue.enqueue(5);
-    console.log(`size of queue => ${queue.size()}`);
-    console.log(`is queue empty => ${queue.isEmpty()}`);
-    console.log(`peek of queue => ${queue.peek()}`);
-    
-    console.log(`front of queue => ${queue.dequeue()}`);
-    console.log(`front of queue => ${queue.dequeue()}`);
-    console.log(`front of queue => ${queue.dequeue()}`);
-    console.log(`size of queue => ${queue.size()}`);
-    console.log(`is queue empty => ${queue.isEmpty()}`);
-    console.log(`peek of queue => ${queue.peek()}`);
-    console.log(`front of queue => ${queue.dequeue()}`);
-    console.log(`front of queue => ${queue.dequeue()}`);
-    console.log(`size of queue => ${queue.size()}`);
-    console.log(`is queue empty => ${queue.isEmpty()}`);
-    console.log(`peek of queue => ${queue.peek()}`);
-  ```  
-* Graph
-  * [Graph](src/graph/graph.js) - Basic implementation of graph.  
-```
-// Code example
-var Graph = DS.Graph;
-var graph = new Graph();
-graph.addNode('A');
-graph.addNode('B');
-graph.addNode('C');
-graph.addNode('D');
-graph.addNode('E');
-graph.addPath('A','B');
-graph.addPath('A','C');
-graph.addPath('A','D');
-graph.addPath('A','E');
-graph.addPath('B','D');
-graph.addPath('B','C');
-graph.addPath('C','E');
-graph.addPath('C','C');
-graph.addPath('C','B');
-graph.addPath('D','A');
-graph.addPath('D','B');
-graph.addPath('E','E');
-graph.print();
-console.log("after removePath");
-graph.removePath('A','E');
-graph.removePath('D','A');
-graph.print();
-console.log("after removeNode");
-graph.removeNode('C');
-graph.print();
-```
+* [Stack](src/stack/STACK.md) - Basic implementation of stack.
+
+* [Queue](src/queue/QUEUE.md) - Basic implementation of queue.
+
+* [Graph](src/graph/GRAPH.md) - Basic implementation of graph data structure .
