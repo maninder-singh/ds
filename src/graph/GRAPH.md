@@ -5,42 +5,34 @@ An implementation of graph data structure using javascript.
 ### initialization 
 
 ```
-var Graph = DS.Graph;
-var graph = new Graph();
+    // Code example
+        var Graph = DS.Graph;
+        var graph = new Graph();
+```
+
+### methods 
+* [addNode](./graph.js) - add a node into graph
+```
 graph.addNode('A');
-graph.addNode('B');
-graph.addNode('C');
-graph.addNode('D');
-graph.addNode('E');
+```
+
+* [addPath](./graph.js) - create a path from src node to destination node in graph. 
+```
 graph.addPath('A','B');
-graph.addPath('A','C');
-graph.addPath('A','D');
-graph.addPath('A','E');
-graph.addPath('B','D');
-graph.addPath('B','C');
-graph.addPath('C','E');
-graph.addPath('C','C');
-graph.addPath('C','B');
-graph.addPath('D','A');
-graph.addPath('D','B');
-graph.addPath('E','E');
-
 ```
 
-### implementation 
-* [Graph](./graph.js) 
+
+* [print](./graph.js) - print graph
 ```
-// Code example
 graph.print();
 ```
 
-* [Breadth-first search](./bfs.js)
+* [bfs](./bfs.js) - breath first search implementation in graph.
 ```
 graph.bfs('A');
 ```
 
-* [Depth-first search](./dfs.js)
+* [dfs](./dfs.js) - depth first search implementation in graph
 ```
 graph.dfs('1');
 ```
-
