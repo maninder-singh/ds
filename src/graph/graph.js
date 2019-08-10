@@ -21,6 +21,26 @@ Graph.prototype.addPath = function (srcNode, destNode) {
   }
 };
 
+Graph.prototype.removeNode = function(node){
+    if(this._graph.hasOwnProperty(node)){
+        delete this._graph[node];
+        Object.keys(this._graph).forEach(function (sNode) {
+           this.removePath(sNode,node);
+        }.bind(this));
+    }
+};
+
+Graph.prototype.removePath = function(srcNode,destNode){
+    if(this._graph.hasOwnProperty(srcNode)){
+        this._graph[srcNode] = this._graph[srcNode].reduce(function (o,i) {
+          if(i !== destNode){
+              o.push(i);
+          }
+          return o;
+        },[]);
+    }
+};
+
 Graph.prototype.print = function () {
   Object.keys(this._graph).forEach(function (node) {
       this._graph[node].forEach(function (dest) {

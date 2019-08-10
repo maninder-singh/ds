@@ -132,4 +132,11 @@ graph.addPath('D','A');
 graph.addPath('D','B');
 graph.addPath('E','E');
 graph.print();
+console.log("after removePath");
+graph.removePath('A','E');
+graph.removePath('D','A');
+graph.print();
+console.log("after removeNode");
+graph.removeNode('C');
+graph.print();
 ```
