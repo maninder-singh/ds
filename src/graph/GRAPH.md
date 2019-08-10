@@ -34,5 +34,5 @@ graph.bfs('A');
 
 * [dfs](./dfs.js) - depth first search implementation in graph
 ```
-graph.dfs('1');
+graph.dfs('A');
 ```
