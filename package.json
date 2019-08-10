@@ -12,7 +12,10 @@
     "data structure",
     "stack",
     "queue",
-    "linked list"
+    "linked list",
+    "graph",
+    "dfs",
+    "bfs"
   ],
   "author": "maninder singh",
   "license": "ISC",
