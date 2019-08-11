@@ -33,3 +33,5 @@ $ npm run build
 * [Queue](src/queue/QUEUE.md) - Basic implementation of queue.
 
 * [Graph](src/graph/GRAPH.md) - Basic implementation of graph data structure .
+
+* [Graph](src/sort/SORT.md) - Basic implementation of sorting algorithms.
