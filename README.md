@@ -34,4 +34,4 @@ $ npm run build
 
 * [Graph](src/graph/GRAPH.md) - Basic implementation of graph data structure .
 
-* [Graph](src/sort/SORT.md) - Basic implementation of sorting algorithms.
+* [Sorting](src/sort/SORT.md) - Basic implementation of sorting algorithms.
