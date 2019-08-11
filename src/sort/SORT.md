@@ -58,3 +58,17 @@ let comparator = function(i,j){
 };
 console.log(`quick sort => ${DS.quickSort([64, 34, 25, 12, 22, 11, 90],comparator)}`); 
 ```
+
+* [mergeSort](./merge-sort.js) - merge sort algorithm implementation.
+```
+let comparator = function(i,j){
+    if(i > j){
+        return 1; // i is greater than j
+    } else if(i === j){
+        return 0; // i equal to j
+    }else{
+        return -1; // i is less than j
+    }
+};
+console.log(`merge sort => ${DS.mergeSort([64, 34, 25, 12, 22, 11, 90],comparator)}`); 
+```
