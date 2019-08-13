@@ -34,12 +34,14 @@ LinkedList.prototype.add = function (data) {
     }
 };
 
-LinkedList.prototype.remove = function (data) {
+LinkedList.prototype.remove = function (callback) {
     if (this._head) {
         let previousHead = this._head,
-            newHead = previousHead;
+            newHead = previousHead,
+            result;
         while (newHead) {
-            if (newHead.data === data) {
+            result = callback.call(null,newHead.data);
+            if (result) {
                 if (previousHead === newHead) {
                     // first element in linked list
                     this._head = newHead.next;

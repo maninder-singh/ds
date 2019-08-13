@@ -28,9 +28,11 @@ ll.iterate(function (data) {
   });
 ```
 
-* [remove](./ll.js) - remove an element by value from linked list.
+* [remove](./ll.js) - remove an node from linked list.
 ```
-ll.remove(1);
+ll.remove(function(value){
+    return value === 1; // remove node with value equal to 1
+});
 ```
 
 * [clear](./ll.js) - empty linked list. 
