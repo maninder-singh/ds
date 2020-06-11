@@ -47,5 +47,5 @@ $ npm run build
 * [Linked List](src/linkedlist/LINKEDLIST.md) - Basic implementation of linked list.
     * [Reverse a linked list](src/linkedlist/reverse-linkedlist.js) 
     * [Reverse a linked list in group of size](src/linkedlist/reverse-linkedlist-in-group.js)
-    * [Middle element of linked list](src/linkedlist/middle-of-linkedlist.js)
- 
+    * [Middle element of linked list](src/linkedlist/middle-of-linkedlist.js) 
+    * [Nth element of linked list](src/linkedlist/nth-node-in-linkedlist.js) 
