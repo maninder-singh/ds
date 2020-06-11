@@ -28,7 +28,8 @@ $ npm run build
 ### data structure implementation 
 * [Linked List](src/linkedlist/LINKEDLIST.md) - Basic implementation of linked list.
     * [Reverse a linked list](src/linkedlist/reverse-linkedlist.js) 
-    * [Reverse a linked list in group of size](src/linkedlist/reverse-linkedlist-in-group.js) 
+    * [Reverse a linked list in group of size](src/linkedlist/reverse-linkedlist-in-group.js)
+    * [Middle element of linked list](src/linkedlist/middle-of-linkedlist.js) 
 * [Stack](src/stack/STACK.md) - Basic implementation of stack.
 
 * [Queue](src/queue/QUEUE.md) - Basic implementation of queue.
